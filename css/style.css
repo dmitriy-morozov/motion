@@ -379,6 +379,9 @@ h3 + p {
 .portfolio h2 + p {
   color: #61af66;
 }
+.portfolio .carousel-inner {
+  padding: 0 30px;
+}
 .portfolio-list {
   margin-top: 35px;
   padding-bottom: 40px;
