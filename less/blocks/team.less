@@ -1,0 +1,43 @@
+
+.team {
+    background: @green;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    h2 {
+        color: white;
+        +p {
+            color: @black-text;
+        }
+    }
+    h3 {
+        color: @green-text;
+        +p {
+            color: @red-text-light;
+        }
+    }
+}
+.team-list {
+    margin-top: 35px;
+}
+.team__item {
+    padding: 25px 10px 10px 10px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    >img {
+        border: 10px solid @green;
+        border-radius: 50%;
+    }
+    a {
+        width: 100%;
+        background: @green;
+        font-size: @font-size-big;
+        line-height: 26px;
+        color: white;
+        position: relative;
+        img {
+            position: absolute;
+            left: 15px;
+        }
+    }
+}

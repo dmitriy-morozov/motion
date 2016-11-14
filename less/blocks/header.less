@@ -1,0 +1,77 @@
+.header {
+    background: @red;
+    position: relative;
+}
+.header__shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+.header__navbar {
+    background: @red-light;
+}
+.navbar {
+    background: @red-light;
+    padding: 15px 0 0 0;
+    border: none;
+}
+.navbar-nav {
+    margin-right: 15px;
+    padding-top: 15px;
+
+    @media @sm {
+        	 margin-right: -15px;
+      }
+}
+.navbar-toggle {
+    margin-right: 65px;
+}
+.logo {
+    vertical-align: bottom;
+    span {
+        display: inline-block;
+        vertical-align: bottom;
+        line-height: 28px;
+        font-size: @font-size-middle_tablet;
+        font-weight: bold;
+        color: @white;
+    }
+    .logo__bottom {
+        font-size: @font-size-small_desktop;
+    }
+    a:hover {
+        text-decoration: none;
+        span {
+            color: black;
+        }
+    }
+}
+.navbar-default .navbar-nav > li > a {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover {
+        color: white;
+        background: black;
+    }
+}
+.carousel-control {
+    top: 250px;
+
+     @media @sm {
+        img {
+        	width:19px;
+        	height:36px;
+        }
+      }
+}
+.carousel-control.left {
+    background: none;
+}
+.carousel-control.right {
+    background: none;
+}

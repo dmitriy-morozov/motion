@@ -1,0 +1,45 @@
+
+.portfolio {
+    background: @gray;
+    padding-top: 20px;
+    padding-bottom: 210px;
+    position: relative;
+    h2 {
+        color: @gray-dark;
+        +p {
+            color: @green-text;
+        }
+    }
+    .carousel-inner {
+        padding: 0 30px;
+    }
+}
+.portfolio-list {
+    margin-top: 35px;
+    padding-bottom: 40px;
+}
+.portfolio__item {
+    margin-top: 10px;
+    p {
+        margin-top: 35px;
+        color: @dark;
+        font-weight: bold;
+    }
+}
+
+.portfolio .carousel-control {
+    @media @sm {
+        top: 590px;
+      }
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0px;
+    li {
+        background: @dark;
+    }
+    .active {
+        background: @green;
+    }
+}
