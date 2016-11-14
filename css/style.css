@@ -312,10 +312,11 @@ h3 + p {
 .tweets__item {
   font-size: 21px;
   font-style: italic;
-  color: #232324;
-}
-.tweets__item .tweets-link {
   color: #fff;
+}
+.tweets__item span {
+  font-style: normal;
+  color: #232324;
 }
 .tweets .carousel-control {
   top: 100px;
