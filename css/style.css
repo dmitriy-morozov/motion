@@ -251,6 +251,7 @@ h3 + p {
 .navbar {
   background: #f56262;
   padding: 15px 0 0 0;
+  border: none;
 }
 .navbar-nav {
   margin-right: 15px;
@@ -293,6 +294,12 @@ h3 + p {
 }
 .carousel-control {
   top: 250px;
+}
+.carousel-control.left {
+  background: none;
+}
+.carousel-control.right {
+  background: none;
 }
 .merits {
   background: #232324;
