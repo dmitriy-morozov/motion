@@ -8,6 +8,8 @@
       <link rel="icon" href="favicon.ico" type="image/x-icon">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/style.min.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -17,12 +19,12 @@
    </head>
    <body>
       <div class="header" id="Home">
-         <img src="img/shape.png" height="100" width="64" alt="" class="header__shape">
          <div class="header__navbar container-fluid">
-            <nav class=" navbar navbar-default">
+            <nav class=" navbar navbar-default navbar-fixed-top">
+            <img src="img/shape.png" height="80" width="64" alt="" class="navbar__shape">
                <div class="container center-block">
                   <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header ">
+                  <div class="navbar-header">
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
@@ -58,7 +60,7 @@
             <!-- Слайды карусели -->
             <h1>Welcome to Motion</h1>
             <p>Asmart & Creative Single Page Template</p>
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
                <div class="item">
                   <img  class="center-block" src="img/back-safari-2.png" height="386" width="775" alt="">
@@ -74,11 +76,11 @@
             </div>
             <!-- Навигация для карусели -->
             <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-            <a class="carousel-control left" href="#header__carousel" data-slide="prev">
+            <a class="carousel-control left wow fadeInDown" href="#header__carousel" data-slide="prev">
             <span class="carousel-control__prev"><img src="img/arrow-prev.png" height="72" width="38" alt="arrow"></span>
             </a>
             <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-            <a class="carousel-control right" href="#header__carousel" data-slide="next">
+            <a class="carousel-control right wow fadeInDown" href="#header__carousel" data-slide="next">
             <span class="carousel-control__next"><img src="img/arrow-next.png" height="72" width="38" alt="arrow"></span>
             </a>
          </div>
@@ -87,7 +89,7 @@
       <div class="merits  container-fluid text-center" >
          <h2>Smart & Creative </h2>
          <p>This is why you will use it :)</p>
-         <div class="merits-list row  container center-block">
+         <div class="merits-list row  container center-block wow fadeInDown">
             <div class="col-md-4 col-sm-4 col-xs-12">
                <div class="merits__item">
                   <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
@@ -117,7 +119,7 @@
       <div class="team text-center container-fluid"  id="Team">
          <h2>Talented & Experts</h2>
          <p>This is our team :)</p>
-         <div class="team-list row  container center-block">
+         <div class="team-list row  container center-block wow fadeInRight">
             <div class="col-md-3 col-sm-6 col-xs-12">
                <div class="team__item">
                   <img class="center-block" src="img/team-1.png" height="147" width="147" alt="Mahmoud">
@@ -156,7 +158,7 @@
          <h2>Elegant & Genuine</h2>
          <p>This is how our works looks like :)</p>
          <div id="portfolio__carousel" class="portfolio__slider carousel slide center-block container" data-interval="3000" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner wow fadeInLeft">
                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
                <!-- Индикаторы для карусели -->
                <ol class="carousel-indicators">
@@ -269,7 +271,7 @@
             </a>
       </div>
       <div class="pricing  container-fluid text-center">
-         <div class="pricing-list row container center-block">
+         <div class="pricing-list row container center-block wow hinge">
             <div class="col-md-4 col-sm-12 col-xs-12">
                <ul class="pricing__item  pricing__item--bottom">
                   <li class="pricing__item-top">
@@ -324,7 +326,7 @@
          </div>
          <a class="pricing__bottom-text" href="#">And more available plans for all needs .... Check here</a>
       </div>
-      <div class="tweets  container-fluid">
+      <div class="tweets  container-fluid wow zoomIn">
          <!-- Карусель -->
          <div id="tweets__carousel" class="tweets__slider carousel slide text-center" data-interval="3000" data-ride="carousel">
             <!-- Слайды карусели -->
@@ -332,7 +334,7 @@
             <p>This is how to keep in touch :)</p>
             <img  class="tweets__icon  center-block" src="img/twitter-icon.png" height="26" width="32" alt="">
             <div class="container center-block">
-               <div class="carousel-inner">
+               <div class="carousel-inner  wow jello" data-wow-duration="5s">
                   <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
                   <div class="tweets__item  item active">
                      <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , I really love the application  ... hope you haveall the luck in ur life ..  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
@@ -369,12 +371,14 @@
          </div>
       </div>
       <div class="contact"  id="Contact">
-         <div class="contact__us container center-block text-center">
+         <div class="contact__us container center-block text-center" >
             <h3>Contact Us</h3>
             <p class="contact__us__middle">7oroof@7oroof.com</p>
             <p>Your address goes here</p>
          </div>
       </div>
+      <script src="js/wow.min.js"></script>
+      <script>new WOW().init();</script>
       <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
    </body>
