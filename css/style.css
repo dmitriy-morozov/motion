@@ -126,6 +126,9 @@ h3 + p {
   padding: 0 30px;
   margin-top: 10px;
 }
+.box--hidden {
+  visibility: hidden;
+}
 .fadeInUp,
 .fadeOutDown {
   visibility: visible;

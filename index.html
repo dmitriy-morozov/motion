@@ -9,9 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,13 +85,12 @@
   </a>
 </div>
 </div>
-<a href="" id="About"></a>
-<div class="merits  container-fluid text-center box animated boxHidded" >
+<div class="merits  container-fluid text-center" id="About">
  <h2>Smart & Creative </h2>
  <p>This is why you will use it :)</p>
- <div class="merits-list row  container center-block ">
+ <div class="merits-list row  container center-block">
   <div class="col-md-4 col-sm-4 col-xs-12">
-   <div class="merits__item ">
+   <div class="merits__item merits-box animated box--hidden">
     <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
     <h3>Multi purpose</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -102,7 +98,7 @@
   </div>
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12">
- <div class="merits__item delay-05s">
+ <div class="merits__item merits-box animated box--hidden delay-05s">
   <img class="center-block" src="img/icon-flat.png" height="100" width="100" alt="flat">
   <h3>Flat UI</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -110,7 +106,7 @@
 </div>
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12">
- <div class="merits__item box animated boxHidded delay-1s">
+ <div class="merits__item merits-box animated box--hidden delay-1s">
   <img class="center-block" src="img/icon-design.png" height="100" width="100" alt="design">
   <h3>Creative Design</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -380,13 +376,19 @@
   <p>Your address goes here</p>
 </div>
 </div>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.js"></script>
 
 
 <script>
-     $('.box')
+     $('.merits-box')
          .waypoint( function(dir) {
              if ( dir === 'down' )
-                  $(this)
+                 $(this)
                  .removeClass('fadeOutDown')
                  .addClass('fadeInUp');
              else
