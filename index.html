@@ -7,7 +7,7 @@
   <title>Motion</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -91,7 +91,7 @@
  <p>This is why you will use it :)</p>
  <div class="merits-list row  container center-block">
   <div class="col-md-4 col-sm-4 col-xs-12">
-   <div class="merits__item merits-box animated ">
+   <div class="merits__item merits-box animated box--hidden">
     <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
     <h3>Multi purpose</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -381,38 +381,36 @@
 <script>new WOW().init();</script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.waypoints.js"></script>
+<script src="js/jquery.waypoints.js"></script>
 
 
 <script>
- $('.merits-box')
- .waypoint( function(dir) {
-   if ( dir === 'down' )
-     $(this)
-   .removeClass('fadeOutUp')
-   .addClass('fadeInDown');
-   else
-     $(this)
-   .removeClass('fadeInDown')
-   .addClass('fadeOutUp');
- }, {
-   offset: '30%'
- })
+     $('.merits-box')
+         .waypoint( function(dir) {
+             if ( dir === 'down' )
+                 $(this)
+                 .removeClass('fadeOutDown')
+                 .addClass('fadeInUp');
+             else
+                 $(this)
+                 .removeClass('fadeInUp')
+                 .addClass('fadeOutDown');
+         }, {
+             offset: '80%'
+         })
  
- .waypoint( function(dir) {
-   if ( dir === 'down' )
-     $(this)
-   .removeClass('fadeInDown')
-   .addClass('fadeOutUp');
-   else
-     $(this)
-   .removeClass('fadeOutUp')
-   .addClass('fadeInDown');
- }, {
-   offset: -50
- })
-
-</script>
-
+         .waypoint( function(dir) {
+             if ( dir === 'down' )
+                 $(this)
+                 .removeClass('fadeInUp')
+                 .addClass('fadeOutDown');
+             else
+                 $(this)
+                 .removeClass('fadeOutDown')
+                 .addClass('fadeInUp');
+         }, {
+             offset: -50
+         })
+ </script>
 </body>
 </html>
