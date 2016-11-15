@@ -386,7 +386,9 @@
      $('.box')
          .waypoint( function(dir) {
              if ( dir === 'down' )
-                 $(this).addClass('fadeInUp');
+                  $(this)
+                 .removeClass('fadeOutDown')
+                 .addClass('fadeInUp');
              else
                  $(this)
                  .removeClass('fadeInUp')
