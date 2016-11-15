@@ -140,7 +140,7 @@ h3 + p {
   animation-delay: 1s;
 }
 .delay-15s {
-  animation-delay: .5s;
+  animation-delay: 1.5s;
 }
 .team {
   background: #6cc372;
