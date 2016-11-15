@@ -139,6 +139,9 @@ h3 + p {
 .delay-1s {
   animation-delay: 1s;
 }
+.delay-15s {
+  animation-delay: .5s;
+}
 .team {
   background: #6cc372;
   padding-top: 60px;
