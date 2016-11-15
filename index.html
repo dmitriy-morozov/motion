@@ -1,385 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Motion</title>
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.min.css">
-      <link rel="stylesheet" type="text/css" href="css/animate.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-   </head>
-   <body>
+    </head>
+    <body>
       <div class="header" id="Home">
-         <div class="header__navbar container-fluid">
-            <nav class=" navbar navbar-default navbar-fixed-top">
-            <img src="img/shape.png" height="80" width="64" alt="" class="navbar__shape">
-               <div class="container center-block">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     </button>
-                     <div class="logo">
-                        <a href="#">
-                        <img class="" src="img/logo-graph.png" height="36" width="48" alt="Motion">
-                        <span>Motion</span>
-                        </a>
-                        <br>
-                        <span class="logo__bottom">Asingle Page Template</span>
-                     </div>
-                  </div>
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Team">Team</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Other">Other</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                     </ul>
-                  </div>
-                  <!-- /.navbar-collapse -->
-               </div>
-            </nav>
-         </div>
-         <!-- Карусель -->
-         <div id="header__carousel" class="header__slider carousel slide text-center" data-interval="3000" data-ride="carousel">
-            <!-- Слайды карусели -->
-            <h1>Welcome to Motion</h1>
-            <p>Asmart & Creative Single Page Template</p>
-            <div class="carousel-inner ">
-               <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-               <div class="item">
-                  <img  class="center-block" src="img/back-safari-2.png" height="386" width="775" alt="">
-               </div>
-               <!-- Слайд №2 -->
-               <div class="active  item">
-                  <img  class="center-block" src="img/back-safari-1.png" height="486" width="780" alt="">
-               </div>
-               <!-- Слайд №3 -->
-               <div class="item">
-                  <img  class="center-block" src="img/back-safari-3.png" height="386" width="775" alt="">
-               </div>
+       <div class="header__navbar container-fluid">
+        <nav class=" navbar navbar-default navbar-fixed-top">
+          <img src="img/shape.png" height="80" width="64" alt="" class="navbar__shape">
+          <div class="container center-block">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <div class="logo">
+              <a href="#">
+                <img class="" src="img/logo-graph.png" height="36" width="48" alt="Motion">
+                <span>Motion</span>
+              </a>
+              <br>
+              <span class="logo__bottom">Asingle Page Template</span>
             </div>
-            <!-- Навигация для карусели -->
-            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-            <a class="carousel-control left wow fadeInDown" href="#header__carousel" data-slide="prev">
-            <span class="carousel-control__prev"><img src="img/arrow-prev.png" height="72" width="38" alt="arrow"></span>
-            </a>
-            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-            <a class="carousel-control right wow fadeInDown" href="#header__carousel" data-slide="next">
-            <span class="carousel-control__next"><img src="img/arrow-next.png" height="72" width="38" alt="arrow"></span>
-            </a>
-         </div>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Other">Other</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-      <a href="" id="About"></a>
-      <div class="merits  container-fluid text-center" >
-         <h2>Smart & Creative </h2>
-         <p>This is why you will use it :)</p>
-         <div class="merits-list row  container center-block wow fadeInDown">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-               <div class="merits__item">
-                  <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
-                  <h3>Multi purpose</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-               <div class="merits__item">
-                  <img class="center-block" src="img/icon-flat.png" height="100" width="100" alt="flat">
-                  <h3>Flat UI</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-               <div class="merits__item">
-                  <img class="center-block" src="img/icon-design.png" height="100" width="100" alt="design">
-                  <h3>Creative Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="team text-center container-fluid"  id="Team">
-         <h2>Talented & Experts</h2>
-         <p>This is our team :)</p>
-         <div class="team-list row  container center-block wow fadeInRight">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-               <div class="team__item">
-                  <img class="center-block" src="img/team-1.png" height="147" width="147" alt="Mahmoud">
-                  <h3>Mahmoud Baghagho</h3>
-                  <p>Senior UI Designer</p>
-                  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
-               </div>
-            </div>
-            <div class=" col-md-3 col-sm-6 col-xs-12">
-               <div class="team__item">
-                  <img class="center-block" src="img/team-2.png" height="147" width="147" alt="Abd">
-                  <h3>Abd ElRahman</h3>
-                  <p>Senior App Developer</p>
-                  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
-               </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-               <div class="team__item">
-                  <img class="center-block" src="img/team-3.png" height="147" width="147" alt="Mostafa">
-                  <h3>Mostafa Amin</h3>
-                  <p>Senior Graphic Designer</p>
-                  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
-               </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-               <div class="team__item">
-                  <img class="center-block" src="img/team-4.png" height="147" width="147" alt="Ahmed">
-                  <h3>Ahmed Ali</h3>
-                  <p>Senior Web Developer</p>
-                  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="portfolio  container-fluid text-center"  id="Portfolio">
-         <h2>Elegant & Genuine</h2>
-         <p>This is how our works looks like :)</p>
-         <div id="portfolio__carousel" class="portfolio__slider carousel slide center-block container" data-interval="3000" data-ride="carousel">
-            <div class="carousel-inner wow fadeInLeft">
-               <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-               <!-- Индикаторы для карусели -->
-               <ol class="carousel-indicators">
-                  <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-                  <li data-target="#portfolio__carousel" data-slide-to="0" class="active"></li>
-                  <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-                  <li data-target="#portfolio__carousel" data-slide-to="1"></li>
-                  <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-                  <li data-target="#portfolio__carousel" data-slide-to="2"></li>
-                  <!-- Перейти к 3 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
-                  <li data-target="#portfolio__carousel" data-slide-to="3"></li>
-               </ol>
-               <!-- Слайды карусели -->
-               <!-- Слайд №1 -->
-               <div class="item  active">
-                  <div class="portfolio-list row">
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
-                        <p>SMS Clouds</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
-                        <p>Blue Apple Soft</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
-                        <p>Together Application</p>
-                     </div>
-                     <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
-                        <p>FC Barcelona Club</p>
-                     </div>
-                  </div>
-               </div>
-               <!-- Слайд №2 -->
-               <div class="item">
-                  <div class="portfolio-list row">
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
-                        <p>SMS Clouds</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
-                        <p>Blue Apple Soft</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
-                        <p>Together Application</p>
-                     </div>
-                     <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
-                        <p>FC Barcelona Club</p>
-                     </div>
-                  </div>
-               </div>
-               <!-- Слайд №3 -->
-               <div class="item">
-                  <div class="portfolio-list row">
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
-                        <p>SMS Clouds</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
-                        <p>Blue Apple Soft</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
-                        <p>Together Application</p>
-                     </div>
-                     <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
-                        <p>FC Barcelona Club</p>
-                     </div>
-                  </div>
-               </div>
-               <!-- Слайд №4 -->
-               <div class="item">
-                  <div class="portfolio-list row">
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
-                        <p>SMS Clouds</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
-                        <p>Blue Apple Soft</p>
-                     </div>
-                     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
-                        <p>Together Application</p>
-                     </div>
-                     <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
-                        <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
-                        <p>FC Barcelona Club</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            
-         </div>
-         <a href="" id="Other"></a>
-         <!-- Навигация для карусели -->
-            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-            <a class="carousel-control left" href="#portfolio__carousel" data-slide="prev">
-            <span class="carousel-control__prev"><img src="img/left-arrow-green.png" height="25" width="17" alt="arrow"></span>
-            </a>
-            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-            <a class="carousel-control right" href="#portfolio__carousel" data-slide="next">
-            <span class="carousel-control__next"><img src="img/right-arrow-green.png" height="25" width="17" alt="arrow"></span>
-            </a>
-      </div>
-      <div class="pricing  container-fluid text-center">
-         <div class="pricing-list row container center-block wow hinge">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-               <ul class="pricing__item  pricing__item--bottom">
-                  <li class="pricing__item-top">
-                     <h2>Start Up</h2>
-                     <p>For begginers</p>
-                  </li>
-                  <li class="pricing__item-center">Standard Pages</li>
-                  <li class="pricing__item-center">MYSQL Databases</li>
-                  <li class="pricing__item-center">Bandwidth</li>
-                  <li class="pricing__item-center">Storage space</li>
-                  <li class="pricing__item-bottom clearfix">
-                     <span class="pricing__item-price">$15<small>/mo</small></span>
-                     <a href="#" class="btn pricing__item-order">Order</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-               <ul class="pricing__item pricing__item--middle">
-                  <li class="pricing__item-top">
-                     <h2>Standart</h2>
-                     <p>More than what you have dreamed width</p>
-                  </li>
-                  <li class="pricing__item-center">
-                     <img class="gear" src="img/icon-gear.png" height="31" width="30" alt="gear">
-                     Standard Pages
-                  </li>
-                  <li class="pricing__item-center">MYSQL Databases</li>
-                  <li class="pricing__item-center">Bandwidth</li>
-                  <li class="pricing__item-center">Storage space</li>
-                  <li class="pricing__item-bottom clearfix">
-                     <span class="pricing__item-price">$25<small>/mo</small></span>
-                     <a href="#" class="btn pricing__item-order">Order</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-               <ul class="pricing__item  pricing__item--bottom">
-                  <li class="pricing__item-top">
-                     <h2>Professional</h2>
-                     <p>For smart people</p>
-                  </li>
-                  <li class="pricing__item-center">Standard Pages</li>
-                  <li class="pricing__item-center">MYSQL Databases</li>
-                  <li class="pricing__item-center">Bandwidth</li>
-                  <li class="pricing__item-center">Storage space</li>
-                  <li class="pricing__item-bottom clearfix">
-                     <span class="pricing__item-price">$35<small>/mo</small></span>
-                     <a href="#" class="btn pricing__item-order">Order</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <a class="pricing__bottom-text" href="#">And more available plans for all needs .... Check here</a>
-      </div>
-      <div class="tweets  container-fluid wow zoomIn">
-         <!-- Карусель -->
-         <div id="tweets__carousel" class="tweets__slider carousel slide text-center" data-interval="3000" data-ride="carousel">
-            <!-- Слайды карусели -->
-            <h2>Latest Tweets</h2>
-            <p>This is how to keep in touch :)</p>
-            <img  class="tweets__icon  center-block" src="img/twitter-icon.png" height="26" width="32" alt="">
-            <div class="container center-block">
-               <div class="carousel-inner  wow jello" data-wow-duration="5s">
-                  <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-                  <div class="tweets__item  item active">
-                     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , I really love the application  ... hope you haveall the luck in ur life ..  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
-                  </div>
-                  <!-- Слайд №2 -->
-                  <div class="tweets__item  item">
-                     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , I really love the application,  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
-                  </div>
-                  <!-- Слайд №3 -->
-                  <div class="tweets__item  item">
-                     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , hope you haveall the luck in ur life ..  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
-                  </div>
-               </div>
-            </div>
-            <!-- Навигация для карусели -->
-            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-            <a class="carousel-control left" href="#tweets__carousel" data-slide="prev">
-            <span class="carousel-control__prev"><img src="img/left-arrow.png" height="38" width="38" alt="arrow"></span>
-            </a>
-            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-            <a class="carousel-control right" href="#tweets__carousel" data-slide="next">
-            <span class="carousel-control__next"><img src="img/right-arrow.png" height="38" width="38" alt="arrow"></span>
-            </a>
-         </div>
-      </div>
-      <div class="footer">
-         <div class="container center-block">
-            <p class="footer__copyright">© 2013 <span>Motion Template.</span> Design by Begha</p>
-            <div class="footer__social">
-               <a class="footer__icons" href="#"><img src="img/facebook-icon.png" height="17" width="9" alt="facebook"></a>
-               <a class="footer__icons" href="#"><img src="img/twitter-icon.png" height="17" width="13" alt="twitter"></a>
-               <a class="footer__icons" href="#"> <img src="img/rss-icon.png" height="16" width="16" alt="rss"></a>
-            </div>
-         </div>
-      </div>
-      <div class="contact"  id="Contact">
-         <div class="contact__us container center-block text-center" >
-            <h3>Contact Us</h3>
-            <p class="contact__us__middle">7oroof@7oroof.com</p>
-            <p>Your address goes here</p>
-         </div>
-      </div>
-      <script src="js/wow.min.js"></script>
-      <script>new WOW().init();</script>
-      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-   </body>
+    </nav>
+  </div>
+  <!-- Карусель -->
+  <div id="header__carousel" class="header__slider carousel slide text-center" data-interval="3000" data-ride="carousel">
+    <!-- Слайды карусели -->
+    <h1>Welcome to Motion</h1>
+    <p>Asmart & Creative Single Page Template</p>
+    <div class="carousel-inner ">
+     <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+     <div class="item">
+      <img  class="center-block" src="img/back-safari-2.png" height="386" width="775" alt="">
+    </div>
+    <!-- Слайд №2 -->
+    <div class="active  item">
+      <img  class="center-block" src="img/back-safari-1.png" height="486" width="780" alt="">
+    </div>
+    <!-- Слайд №3 -->
+    <div class="item">
+      <img  class="center-block" src="img/back-safari-3.png" height="386" width="775" alt="">
+    </div>
+  </div>
+  <!-- Навигация для карусели -->
+  <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+  <a class="carousel-control left wow fadeInDown" href="#header__carousel" data-slide="prev">
+    <span class="carousel-control__prev"><img src="img/arrow-prev.png" height="72" width="38" alt="arrow"></span>
+  </a>
+  <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+  <a class="carousel-control right wow fadeInDown" href="#header__carousel" data-slide="next">
+    <span class="carousel-control__next"><img src="img/arrow-next.png" height="72" width="38" alt="arrow"></span>
+  </a>
+</div>
+</div>
+<a href="" id="About"></a>
+<div class="merits  container-fluid text-center" >
+ <h2>Smart & Creative </h2>
+ <p>This is why you will use it :)</p>
+ <div class="merits-list row  container center-block">
+  <div class="col-md-4 col-sm-4 col-xs-12">
+   <div class="merits__item merits-box animated ">
+    <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
+    <h3>Multi purpose</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
+    </p>
+  </div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+ <div class="merits__item merits-box animated box--hidden delay-05s">
+  <img class="center-block" src="img/icon-flat.png" height="100" width="100" alt="flat">
+  <h3>Flat UI</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
+  </p>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+ <div class="merits__item merits-box animated box--hidden delay-1s">
+  <img class="center-block" src="img/icon-design.png" height="100" width="100" alt="design">
+  <h3>Creative Design</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
+  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="team text-center container-fluid"  id="Team">
+ <h2>Talented & Experts</h2>
+ <p>This is our team :)</p>
+ <div class="team-list row  container center-block wow fadeInRight">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+   <div class="team__item">
+    <img class="center-block" src="img/team-1.png" height="147" width="147" alt="Mahmoud">
+    <h3>Mahmoud Baghagho</h3>
+    <p>Senior UI Designer</p>
+    <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
+  </div>
+</div>
+<div class=" col-md-3 col-sm-6 col-xs-12">
+ <div class="team__item">
+  <img class="center-block" src="img/team-2.png" height="147" width="147" alt="Abd">
+  <h3>Abd ElRahman</h3>
+  <p>Senior App Developer</p>
+  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+ <div class="team__item">
+  <img class="center-block" src="img/team-3.png" height="147" width="147" alt="Mostafa">
+  <h3>Mostafa Amin</h3>
+  <p>Senior Graphic Designer</p>
+  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+ <div class="team__item">
+  <img class="center-block" src="img/team-4.png" height="147" width="147" alt="Ahmed">
+  <h3>Ahmed Ali</h3>
+  <p>Senior Web Developer</p>
+  <a class="btn btn-default" href="#" role="button"><img src="img/twitter-icon.png" height="26" width="32" alt="">Follow</a>
+</div>
+</div>
+</div>
+</div>
+<div class="portfolio  container-fluid text-center"  id="Portfolio">
+ <h2>Elegant & Genuine</h2>
+ <p>This is how our works looks like :)</p>
+ <div id="portfolio__carousel" class="portfolio__slider carousel slide center-block container" data-interval="3000" data-ride="carousel">
+  <div class="carousel-inner wow fadeInLeft">
+   <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+   <!-- Индикаторы для карусели -->
+   <ol class="carousel-indicators">
+    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+    <li data-target="#portfolio__carousel" data-slide-to="0" class="active"></li>
+    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+    <li data-target="#portfolio__carousel" data-slide-to="1"></li>
+    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+    <li data-target="#portfolio__carousel" data-slide-to="2"></li>
+    <!-- Перейти к 3 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
+    <li data-target="#portfolio__carousel" data-slide-to="3"></li>
+  </ol>
+  <!-- Слайды карусели -->
+  <!-- Слайд №1 -->
+  <div class="item  active">
+    <div class="portfolio-list row">
+     <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+      <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
+      <p>SMS Clouds</p>
+    </div>
+    <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+      <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
+      <p>Blue Apple Soft</p>
+    </div>
+    <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+      <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
+      <p>Together Application</p>
+    </div>
+    <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
+      <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
+      <p>FC Barcelona Club</p>
+    </div>
+  </div>
+</div>
+<!-- Слайд №2 -->
+<div class="item">
+  <div class="portfolio-list row">
+   <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
+    <p>SMS Clouds</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
+    <p>Blue Apple Soft</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
+    <p>Together Application</p>
+  </div>
+  <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
+    <p>FC Barcelona Club</p>
+  </div>
+</div>
+</div>
+<!-- Слайд №3 -->
+<div class="item">
+  <div class="portfolio-list row">
+   <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
+    <p>SMS Clouds</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
+    <p>Blue Apple Soft</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
+    <p>Together Application</p>
+  </div>
+  <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
+    <p>FC Barcelona Club</p>
+  </div>
+</div>
+</div>
+<!-- Слайд №4 -->
+<div class="item">
+  <div class="portfolio-list row">
+   <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-1.png" height="150" width="200" alt="Clouds">
+    <p>SMS Clouds</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-2.png" height="150" width="200" alt="Apple">
+    <p>Blue Apple Soft</p>
+  </div>
+  <div class="portfolio__item  text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-3.png" height="150" width="200" alt="Together">
+    <p>Together Application</p>
+  </div>
+  <div class="portfolio__item text-center col-md-3 col-sm-6 col-xs-12">
+    <img class="center-block" src="img/works-4.png" height="150" width="200" alt="Barcelona">
+    <p>FC Barcelona Club</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+<a href="" id="Other"></a>
+<!-- Навигация для карусели -->
+<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+<a class="carousel-control left" href="#portfolio__carousel" data-slide="prev">
+  <span class="carousel-control__prev"><img src="img/left-arrow-green.png" height="25" width="17" alt="arrow"></span>
+</a>
+<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+<a class="carousel-control right" href="#portfolio__carousel" data-slide="next">
+  <span class="carousel-control__next"><img src="img/right-arrow-green.png" height="25" width="17" alt="arrow"></span>
+</a>
+</div>
+<div class="pricing  container-fluid text-center">
+ <div class="pricing-list row container center-block wow hinge">
+  <div class="col-md-4 col-sm-12 col-xs-12">
+   <ul class="pricing__item  pricing__item--bottom">
+    <li class="pricing__item-top">
+     <h2>Start Up</h2>
+     <p>For begginers</p>
+   </li>
+   <li class="pricing__item-center">Standard Pages</li>
+   <li class="pricing__item-center">MYSQL Databases</li>
+   <li class="pricing__item-center">Bandwidth</li>
+   <li class="pricing__item-center">Storage space</li>
+   <li class="pricing__item-bottom clearfix">
+     <span class="pricing__item-price">$15<small>/mo</small></span>
+     <a href="#" class="btn pricing__item-order">Order</a>
+   </li>
+ </ul>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+ <ul class="pricing__item pricing__item--middle">
+  <li class="pricing__item-top">
+   <h2>Standart</h2>
+   <p>More than what you have dreamed width</p>
+ </li>
+ <li class="pricing__item-center">
+   <img class="gear" src="img/icon-gear.png" height="31" width="30" alt="gear">
+   Standard Pages
+ </li>
+ <li class="pricing__item-center">MYSQL Databases</li>
+ <li class="pricing__item-center">Bandwidth</li>
+ <li class="pricing__item-center">Storage space</li>
+ <li class="pricing__item-bottom clearfix">
+   <span class="pricing__item-price">$25<small>/mo</small></span>
+   <a href="#" class="btn pricing__item-order">Order</a>
+ </li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+ <ul class="pricing__item  pricing__item--bottom">
+  <li class="pricing__item-top">
+   <h2>Professional</h2>
+   <p>For smart people</p>
+ </li>
+ <li class="pricing__item-center">Standard Pages</li>
+ <li class="pricing__item-center">MYSQL Databases</li>
+ <li class="pricing__item-center">Bandwidth</li>
+ <li class="pricing__item-center">Storage space</li>
+ <li class="pricing__item-bottom clearfix">
+   <span class="pricing__item-price">$35<small>/mo</small></span>
+   <a href="#" class="btn pricing__item-order">Order</a>
+ </li>
+</ul>
+</div>
+</div>
+<a class="pricing__bottom-text" href="#">And more available plans for all needs .... Check here</a>
+</div>
+<div class="tweets  container-fluid wow zoomIn">
+ <!-- Карусель -->
+ <div id="tweets__carousel" class="tweets__slider carousel slide text-center" data-interval="3000" data-ride="carousel">
+  <!-- Слайды карусели -->
+  <h2>Latest Tweets</h2>
+  <p>This is how to keep in touch :)</p>
+  <img  class="tweets__icon  center-block" src="img/twitter-icon.png" height="26" width="32" alt="">
+  <div class="container center-block">
+   <div class="carousel-inner  wow jello" data-wow-duration="5s">
+    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+    <div class="tweets__item  item active">
+     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , I really love the application  ... hope you haveall the luck in ur life ..  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
+   </div>
+   <!-- Слайд №2 -->
+   <div class="tweets__item  item">
+     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , I really love the application,  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
+   </div>
+   <!-- Слайд №3 -->
+   <div class="tweets__item  item">
+     <p><span class="tweets-author">@ Abd-Alrahaman Elgazzar</span>  Great work Abd-Alrahaman , hope you haveall the luck in ur life ..  also have alook here <span class="tweets-link">http://t.co/zfdgfdg</span></p>
+   </div>
+ </div>
+</div>
+<!-- Навигация для карусели -->
+<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+<a class="carousel-control left" href="#tweets__carousel" data-slide="prev">
+  <span class="carousel-control__prev"><img src="img/left-arrow.png" height="38" width="38" alt="arrow"></span>
+</a>
+<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+<a class="carousel-control right" href="#tweets__carousel" data-slide="next">
+  <span class="carousel-control__next"><img src="img/right-arrow.png" height="38" width="38" alt="arrow"></span>
+</a>
+</div>
+</div>
+<div class="footer">
+ <div class="container center-block">
+  <p class="footer__copyright">© 2013 <span>Motion Template.</span> Design by Begha</p>
+  <div class="footer__social">
+   <a class="footer__icons" href="#"><img src="img/facebook-icon.png" height="17" width="9" alt="facebook"></a>
+   <a class="footer__icons" href="#"><img src="img/twitter-icon.png" height="17" width="13" alt="twitter"></a>
+   <a class="footer__icons" href="#"> <img src="img/rss-icon.png" height="16" width="16" alt="rss"></a>
+ </div>
+</div>
+</div>
+<div class="contact"  id="Contact">
+ <div class="contact__us container center-block text-center" >
+  <h3>Contact Us</h3>
+  <p class="contact__us__middle">7oroof@7oroof.com</p>
+  <p>Your address goes here</p>
+</div>
+</div>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.js"></script>
+
+
+<script>
+ $('.merits-box')
+ .waypoint( function(dir) {
+   if ( dir === 'down' )
+     $(this)
+   .removeClass('fadeOutUp')
+   .addClass('fadeInDown');
+   else
+     $(this)
+   .removeClass('fadeInDown')
+   .addClass('fadeOutUp');
+ }, {
+   offset: '30%'
+ })
+ 
+ .waypoint( function(dir) {
+   if ( dir === 'down' )
+     $(this)
+   .removeClass('fadeInDown')
+   .addClass('fadeOutUp');
+   else
+     $(this)
+   .removeClass('fadeOutUp')
+   .addClass('fadeInDown');
+ }, {
+   offset: -50
+ })
+
+</script>
+
+</body>
 </html>

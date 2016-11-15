@@ -43,13 +43,6 @@ h3 + p {
 }
 .header {
   background: #eb4f4e;
-  position: relative;
-}
-.header__shape {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 5;
 }
 .header__navbar {
   background: #f56262;
@@ -59,12 +52,14 @@ h3 + p {
   padding: 15px 0 0 0;
   border: none;
 }
+.navbar__shape {
+  float: right;
+  margin-top: -15px;
+  z-index: 5;
+}
 .navbar-nav {
   margin-right: 15px;
-  padding-top: 15px;
-}
-.navbar-toggle {
-  margin-right: 65px;
+  padding-top: 5px;
 }
 .logo {
   vertical-align: bottom;
@@ -109,7 +104,7 @@ h3 + p {
 }
 .merits {
   background: #232324;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 25px;
 }
 .merits h2 {
@@ -131,9 +126,24 @@ h3 + p {
   padding: 0 30px;
   margin-top: 10px;
 }
+.box--hidden {
+  visibility: hidden;
+  /*  Делаем иконки полностью прозрачными  */
+}
+.fadeInDown,
+.fadeOutUp {
+  visibility: visible;
+  /*  Делаем иконки полностью не прозрачными  */
+}
+.delay-05s {
+  animation-delay: .5s;
+}
+.delay-1s {
+  animation-delay: 1s;
+}
 .team {
   background: #6cc372;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 25px;
 }
 .team h2 {
@@ -175,7 +185,7 @@ h3 + p {
 }
 .portfolio {
   background: #f0f0f0;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 210px;
   position: relative;
 }
