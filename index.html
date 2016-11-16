@@ -18,7 +18,7 @@
       <![endif]-->
     </head>
     <body>
-      <div class="header" id="Home">
+      <div class="header tracked" id="Home">
        <div class="header__navbar container-fluid">
         <nav class=" navbar navbar-default navbar-fixed-top">
           <img src="img/shape.png" height="80" width="64" alt="" class="navbar__shape">
@@ -85,12 +85,12 @@
   </a>
 </div>
 </div>
-<div class="merits  container-fluid text-center" id="About">
+<div class="merits  container-fluid text-center tracked" id="About">
  <h2>Smart & Creative </h2>
  <p>This is why you will use it :)</p>
- <div class="merits-list row  container center-block wow fadeInDown">
+ <div class="merits-list row  container center-block">
   <div class="col-md-4 col-sm-4 col-xs-12">
-   <div class="merits__item">
+   <div class="merits__item merits-box animated box--hidden">
     <img class="center-block" src="img/icon-multi.png" height="100" width="100" alt="multi">
     <h3>Multi purpose</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -98,7 +98,7 @@
   </div>
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12">
- <div class="merits__item">
+ <div class="merits__item merits-box animated box--hidden delay-05s">
   <img class="center-block" src="img/icon-flat.png" height="100" width="100" alt="flat">
   <h3>Flat UI</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -106,7 +106,7 @@
 </div>
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12">
- <div class="merits__item">
+ <div class="merits__item merits-box animated box--hidden delay-1s">
   <img class="center-block" src="img/icon-design.png" height="100" width="100" alt="design">
   <h3>Creative Design</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing..
@@ -115,7 +115,7 @@
 </div>
 </div>
 </div>
-<div class="team text-center container-fluid"  id="Team">
+<div class="team text-center container-fluid tracked"  id="Team">
  <h2>Talented & Experts</h2>
  <p>This is our team :)</p>
  <div class="team-list row  container center-block">
@@ -153,11 +153,11 @@
 </div>
 </div>
 </div>
-<div class="portfolio  container-fluid text-center"  id="Portfolio">
+<div class="portfolio  container-fluid text-center tracked"  id="Portfolio">
  <h2>Elegant & Genuine</h2>
  <p>This is how our works looks like :)</p>
  <div id="portfolio__carousel" class="portfolio__slider carousel slide center-block container" data-interval="3000" data-ride="carousel">
-  <div class="carousel-inner wow fadeInLeft">
+  <div class="carousel-inner portfolio-box animated box--hidden">
    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
    <!-- Индикаторы для карусели -->
    <ol class="carousel-indicators">
@@ -258,7 +258,7 @@
 </div>
 
 </div>
-<a href="" id="Other"></a>
+<a class="tracked" href="#" id="Other"></a>
 <!-- Навигация для карусели -->
 <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
 <a class="carousel-control left" href="#portfolio__carousel" data-slide="prev">
@@ -271,7 +271,7 @@
 </div>
 <div class="pricing  container-fluid text-center">
  <div class="pricing-list row container center-block wow hinge">
-  <div class="col-md-4 col-sm-12 col-xs-12">
+  <div class="col-md-4 col-sm-12 col-xs-12 price-box animated box--hidden">
    <ul class="pricing__item  pricing__item--bottom">
     <li class="pricing__item-top">
      <h2>Start Up</h2>
@@ -287,7 +287,7 @@
    </li>
  </ul>
 </div>
-<div class="col-md-4 col-sm-12 col-xs-12">
+<div class="col-md-4 col-sm-12 col-xs-12 price-box animated box--hidden delay-05s">
  <ul class="pricing__item pricing__item--middle">
   <li class="pricing__item-top">
    <h2>Standart</h2>
@@ -306,7 +306,7 @@
  </li>
 </ul>
 </div>
-<div class="col-md-4 col-sm-12 col-xs-12">
+<div class="col-md-4 col-sm-12 col-xs-12 price-box animated box--hidden delay-1s">
  <ul class="pricing__item  pricing__item--bottom">
   <li class="pricing__item-top">
    <h2>Professional</h2>
@@ -369,48 +369,18 @@
  </div>
 </div>
 </div>
-<div class="contact"  id="Contact">
+<div class="contact tracked"  id="Contact">
  <div class="contact__us container center-block text-center" >
   <h3>Contact Us</h3>
   <p class="contact__us__middle">7oroof@7oroof.com</p>
   <p>Your address goes here</p>
 </div>
 </div>
-<script src="js/wow.min.js"></script>
-<script>new WOW().init();</script>
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.js"></script>
+<script type="text/javascript" src="js/waypoints-animated.js"></script>
 
 
-<script>
-     $('.team-box')
-        .waypoint( function(dir) {
-             if ( dir === 'down' )
-                 $(this)
-                 .removeClass('fadeOutDown')
-                 .addClass('fadeInUp');
-             else
-                 $(this)
-                 .removeClass('fadeInUp')
-                 .addClass('fadeOutDown');
-         }, {
-             offset: '90%'
-         })
- 
-         .waypoint( function(dir) {
-             if ( dir === 'down' )
-                 $(this)
-                 .removeClass('fadeInUp')
-                 .addClass('fadeOutDown');
-             else
-                 $(this)
-                 .removeClass('fadeOutDown')
-                 .addClass('fadeInUp');
-         }, {
-             offset: '-50'
-         })
- </script>
 </body>
 </html>
